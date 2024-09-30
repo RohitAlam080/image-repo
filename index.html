@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Css properties</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        background-color: rgb(125, 255, 125);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        height: 275px;
+        min-width: 250px;
+        width: 470px;
+        background: linear-gradient(45deg, black, grey);
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        position: relative;
+        border-radius: 20px;
+        padding-left: 20px;
+        color: rgb(255, 130, 99);
+        cursor: pointer;
+        transition: all 0.5s;
+        
+    }
+
+    .card img {
+        height: 275px;
+        max-width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        transition: all 0.5s;
+
+    }
+    .card h4{
+        margin-top: 25px;
+        color:#e5aa1d ;
+        transition: all 0.5s;
+        padding-top: 12px;
+    }
+    .card p{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .card p{
+        width: 200px;
+        margin-bottom: 20px;
+        transition: all 0.5s;
+        opacity: 0;
+
+    }
+    .card:hover p{
+        opacity: 1;
+    
+    }
+    .card:hover img{
+        left: 82%;
+        top: 60%;
+        height: 300px;
+        filter: drop-shadow(30px 10px 4px #343445);
+    }
+    .card:hover p{
+        color: whitesmoke;
+    }
+    .card:hover h4{
+        font-size: 28px;
+        margin-bottom: 15px;
+
+        
+    }
+
+    
+
+
+</style>
+
+<body>
+    <div class="box">
+
+
+    <div class="card">
+        <div class="content">
+            <h4> AMAZING SPIDE-RMAN </h4>
+            <p>
+                Spider-Man is a superhero appearing in American comic books published by Marvel Comics. Created by writer-editor Stan Lee and artist Steve Ditko, he first appeared in the anthology comic book Amazing Fantasy #15 (August 1962) in the Silver Age of Comic Books.
+            </p>
+
+        </div>
+        <img src="./pngwing.com.png" alt="">
+    </div>
+</div>
+</body>
+
+</html>
